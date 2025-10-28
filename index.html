@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonrisas sanas</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/blanqueamiento-dental.png">
+
+
+</head>
+
+<body>
+
+  <form action="/enviar-respuestas" method="get">
+
+    <header>
+
+      <img src="images/logo-removebg-preview.png" alt="logotipo" id="imagen-principal">
+
+      <section id="fecha">
+
+        <h2>Fecha</h2>
+
+        <div class="cuadrante"></div>
+        <div class="cuadrante"></div>
+        <div class="cuadrante"></div>
+
+      </section>
+      <br>
+     
+    </header>
+
+    <section id="cuerpo">
+
+      <div class="titulos">
+        <h1>Datos del paciente</h1>
+
+      </div>
+
+      <section class="cuerpo-del-formulario">
+
+        <ol>
+          <li>
+            <label for="nombre">Nombre completo:
+              <input type="text" id="nombre" name="nombre"></label>
+          </li>
+
+          <br>
+
+          <li>
+
+            <label for="nacimiento">Fecha de nacimiento:
+              <input type="date" id="nacimiento" name="nacimiento"></label>
+
+          </li>
+
+          <br>
+
+          <li>
+
+            <div id="hola">
+
+              <label for="correo">Correo Electrónico:
+                <input type="email" id="correo" name="correo"></label> //
+
+              <label for="telefono">Teléfono Móvil:
+                <input type="tel" id="telefono" name="telefono"></label>
+
+            </div>
+
+          </li>
+
+          <br>
+
+          <li>
+
+            <label for="direccion">Dirección Residencial:
+              <input type="text" id="direccion" name="direccion"></label>
+
+          </li>
+      
+        </ol>
+
+      </section>
+
+      <div class="titulos">
+        <h1>Historial dental y motivo de consulta</h1>
+
+      </div>
+
+      <section class="cuerpo-del-formulario">
+
+        <ol>
+          <li>Motivo Principal de su Visita: (Marque una o más opciones)
+  
+            <ul>
+              <br>
+
+              <li>
+
+                <label for="examen-limpieza">
+
+                  <input type="checkbox" name="examen-limpieza" id="examen-limpieza"> Examen y Limpieza de Rutina
+
+                </label>
+              </li>
+
+              <li>
+
+                <label for="Dolor o Molestia">
+
+                  <input type="checkbox" name="Dolor o Molestia" id="Dolor o Molestia"> Dolor o Molestia
+
+                </label>
+              </li>
+
+              <li>
+
+                <label for="estetica">
+
+                  <input type="checkbox" name="estetica" id="estetica"> Estética (Blanqueamiento, Carillas, etc.)
+
+                </label>
+              </li>
+
+              <li>
+
+                <label for="emergencia-fractura">
+
+                  <input type="checkbox" name="emergencia-fractura" id="emergencia-fractura"> Emergencia / Fractura
+
+
+                </label>
+              </li>
+
+              <li>
+                  <label for="otro">
+
+                    <input type="checkbox" name="otro" id="otro">Otro: <input type="text" placeholder="Descripción">
+
+
+                  </label>
+              
+              </li>
+
+            </ul>
+          </li>
+          <br>
+
+          <li>
+            <label for="visita">¿Cuándo fue su última visita al dentista? <input type="date" id="visita" name="visita"></label> 
+          </li>
+
+          <br>
+
+          <li id="info">¿Ha tenido alguna de las siguientes condiciones? (Marque la casilla)
+
+            <h4 class="condiciones"><strong>Concidion Si / No</strong></h4>
+
+            <label for="dolor">Dolor/Sensibilidad Dental
+              <input type="radio" id="dolor1" name="dolor">
+              <input type="radio" id="dolor2" name="dolor"></label>
+
+              <br>
+
+            <label for="dificultad">Dificultad para Masticar 
+              <input type="radio" id="dificultad1" name="dificultad">
+              <input type="radio" id="dificultad2" name="dificultad"></label>
+
+              <br>
+
+            <label for="sangrado">Sangrado de Encías 
+              <input type="radio" id="sangrado1" name="sangrado">
+              <input type="radio" id="sangrado2" name="sangrado"></label>
+
+              <br>
+
+            <label for="trauma">Trauma o Golpe en la Boca
+              <input type="radio" id="trauma1" name="trauma">
+              <input type="radio" id="trauma2" name="trauma"></label>
+
+          
+          </li>
+        </ol>
+
+      </section>
+
+      <div class="titulos">
+        <h1>Historial médico básico</h1>
+
+      </div>
+
+      <section class="cuerpo-del-formulario">
+
+        <ol>
+
+          <li>¿Padece o ha padecido alguna enfermedad seria o crónica? (Ej. Diabetes, Hipertensión)
+
+            <br>
+            <br>
+
+            <label for="enfermedades">
+
+              <input type="radio" id="enfermedades1" name="enfermedades">Sí
+
+              <br>
+              <br>
+
+              <input type="radio" id="enfermedades2" name="enfermedades">No
+              
+            </label>
+
+              <br>
+              <br>
+
+              <label for="especifique">Si respondió SÍ, especifique: <input type="text" id="especifique" name="especifique"></label>
+
+          </li>
+
+          <br>
+
+          <li>¿Es alérgico a algún medicamento o material (Ej. Anestesia, Penicilina, Látex)?
+
+            <br>
+            <br>
+
+            <label for="alergia">
+
+              <input type="radio" id="alergia1" name="alergia">Sí
+
+              <br>
+              <br>
+
+              <input type="radio" id="alergia2" name="alergia">No
+              
+            </label>
+
+              <br>
+              <br>
+
+              <label for="especifique-alergia">Si respondió SÍ, especifique: <input type="text" id="especifique-alergia1" name="especifique-alergia"></label>
+
+          </li>
+          <br>
+
+          <li> ¿Está tomando algún medicamento actualmente?
+
+            <br>
+            <br>
+
+            <label for="medicamentos">
+
+              <input type="radio" id="medicamentos1" name="medicamentos">Sí
+
+              <br>
+              <br>
+
+              <input type="radio" id="medicamentos2" name="medicamentos">No
+              
+            </label>
+
+              <br>
+              <br>
+
+              <label for="especifique-medicamento">Si respondió SÍ, especifique: <input type="text" id="especifique-medicamento" name="especifique-medicamento"></label>
+
+          </li>
+
+        </ol>
+
+      </section>
+      
+      <div class="titulos">
+        <h1>Declaracion y firma</h1>
+
+      </div>
+
+      <section class="cuerpo-del-formulario-esp">
+
+      <p><b>Certifico que toda la información provista en este formulario es verdadera y completa.</b>
+
+      </p>
+
+      <label for="firma">Firma del Paciente: 
+
+        <input type="text" id="firma" name="firma" required>
+      
+      </label>
+      </section>
+
+      <br>
+      <hr>
+
+      
+
+      <center><h4><b>Para ser rellenado por el personal autorizado solamente</b></h4></center>
+      
+      <section class="cuerpo-del-formulario-esp">
+
+      <label for="p1">
+        Recibido por: <input type="text" id="p1" name="relleno">
+      </label>
+
+      // <label for="p2">
+        Fecha: <input type="date" id="p2" name="relleno">
+      </label>
+
+      <br><br>
+
+      <label for="p2">
+        Persona responsable: <input type="text" id="p2" name="relleno">
+      </label>
+
+      <br><br>
+
+       <label for="p3">
+        Centro: <input type="text" id="p3" name="relleno">
+      </label>
+
+      </section>
+      <br>
+      <hr>
+
+      <footer>
+
+        <article class="contacto">
+
+        <h1>Dirección</h1>
+        <p>Av. de las Sonrisas, Edificio Diente Feliz, Suite 301, Santo Domingo</p>
+
+        </article>
+
+        <article class="contacto">
+
+        <h1>Teléfono</h1>
+        <p>1+ (809)555-3368</p>
+        
+        </article>
+
+        <article class="contacto1">
+
+        <h1>Correo Electrónico</h1>
+        <p>Sonrisas092@sonrisassanas.com</p>
+        
+        </article>
+
+      </footer>
+
+
+
+
+    </section>
+  </form>
+
+</body>
+
+</html>
