@@ -4,7 +4,7 @@ form{
     height: 2010px;
     width: 850px;
     border: 1px solid black;
-   
+    margin: 20px 250px 20px 250px;
     border-radius: 0.5%;
 }
 
@@ -36,6 +36,7 @@ form{
     margin-left: 95px;
     font-size: 18px;
 }
+
 
 
 
