@@ -34,15 +34,17 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    gap: 20px;
+    padding: 10px 20px;
+
+  
+   
+    
 }
 
-.image{
-    max-width: 200px;
-}
 
 .image img{
+    display: inline-block;
+    max-width: 250px;
     width: 100%;
    
 }
@@ -62,18 +64,20 @@ form{
 
 .preguntas ol{
     font-size: 1.8rem;
+  
+ 
 }
 
 .preguntas ul{
     padding-left: 30px;
     display: flex;
     flex-direction: column;
-    list-style: numeric;
-    
+    list-style: numeric;    
 }
 
 .preguntas li{
     margin-bottom: 15px;
+    
 }
 
 label{
@@ -85,14 +89,67 @@ input{
     max-width: 200px;
     height: 22px;
     border-radius: 2px;
+    margin-left: 5px;
 }
+
+.preguntas label{
+    display: flex;
+    align-items: center;
+}
+
+textarea{
+    resize: none;
+}
+
+.titulo-condiciones{
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
 
 
 
 .condiciones{
-    margin-left: 95px;
-    font-size: 18px;
+   
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
 }
+
+
+
+.condicion-izq label{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+
+}
+
+.condicion-der{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.condicion-der h4{
+    text-align: start;
+}
+
+.condicion-der .grupos{
+    margin-left: 70px;
+}
+
+
+.grupos input{
+    display: inline-block;
+    width: 18px;
+}
+
 
 
 
